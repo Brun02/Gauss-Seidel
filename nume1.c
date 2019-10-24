@@ -7,7 +7,7 @@ int main(){
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}};
 	double x[3]={0.5, 0.5, 0.5};
-	double erro=1/100;
+	double erro=1/100; //péee
 	double x_aux[4], distancia[4];
 	double max, maior, dr;
 	//primeira interação
