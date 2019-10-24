@@ -3,7 +3,7 @@
 
 int main(){
 	int i, j;
-	double m_estendida[3][4]={{1, 0, -1, 0.2},
+	double matriz_estendida[3][4]={{1, 0, -1, 0.2},
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}};
 	double x[3]={0.5, 0.5, 0.5};
@@ -13,13 +13,13 @@ int main(){
 	//primeira interação
 	for(i=0;i<299;i++){
         if(i==0){
-        x_aux[1]=(m_estendida[0][3]-(m_estendida[0][1]*x[1])-(m_estendida[0][2]*x[2]))/m_estendida[0][0];
+        x_aux[1]=(matriz_estendida[0][3]-(matriz_estendida[0][1]*x[1])-(matriz_estendida[0][2]*x[2]))/matriz_estendida[0][0];
         }
         else{
-        x_aux[1]=(m_estendida[0][3]-(m_estendida[0][1]*x_aux[2])-(m_estendida[0][2]*x_aux[3]))/m_estendida[0][0];
+        x_aux[1]=(matriz_estendida[0][3]-(matriz_estendida[0][1]*x_aux[2])-(matriz_estendida[0][2]*x_aux[3]))/matriz_estendida[0][0];
         }
-        x_aux[2]=(m_estendida[1][3]-(m_estendida[1][0]*x_aux[1])-(m_estendida[1][2]*x[2]))/m_estendida[1][1];
-		x_aux[3]=(m_estendida[2][3]-(m_estendida[2][0]*x_aux[1])-(m_estendida[2][1]*x_aux[2]))/m_estendida[2][2];
+        x_aux[2]=(matriz_estendida[1][3]-(matriz_estendida[1][0]*x_aux[1])-(matriz_estendida[1][2]*x[2]))/matriz_estendida[1][1];
+		x_aux[3]=(matriz_estendida[2][3]-(matriz_estendida[2][0]*x_aux[1])-(matriz_estendida[2][1]*x_aux[2]))/matriz_estendida[2][2];
 		//printf("%lf %lf %lf\n", x_aux[1], x_aux[2], x_aux[3]);
 		max=fabs(x_aux[1]);
 		if(fabs(x_aux[2])>max){
@@ -38,9 +38,8 @@ int main(){
 		if(distancia[3]>maior){
 			maior=distancia[3];
 		}
-		//printf("%lf %lf   ***\n", maior, max);
 		dr=maior/max;
-		//printf("%lf\n", dr);
+
 		if(dr<0.01){
 			printf("solucao: %.2lf %.2lf %.2lf\n", x_aux[1], x_aux[2], x_aux[3]);
 			printf("Numero de iteracao: %i", i+1);
