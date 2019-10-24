@@ -7,9 +7,9 @@ int main(){
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}};
 	double x[3]={0.5, 0.5, 0.5};
-	double erro=1/100;
+	double erro=5*1/100;
 	double x_aux[4], distancia[4];
-	double max, maior, dr;
+	double max, maior, dr;//dr teste de parada do teste de convergencia
 	//primeira interação
 	for(i=0;i<299;i++){
         if(i==0){
