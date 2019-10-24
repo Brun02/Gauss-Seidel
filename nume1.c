@@ -6,7 +6,7 @@ int main(){
 	double matriz_estendida[3][4]={{-1, 0, -1, 0.2},
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}}; //fixing connection problem on git
-	double x[3]={0.5, 0.5, 0.5};
+	double x[3]={0.5, 0.5, 0.5}; //ajuda aqui
 	double erro=1/100; //péee
 	double x_aux[4], distancia[4];
 	double max, maior, dr;//dr teste de parada do teste de convergencia
