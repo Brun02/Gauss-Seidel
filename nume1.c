@@ -3,7 +3,7 @@
 
 int main(){
 	int i, j;
-	double matriz_estendida[3][4]={{1, 0, -1, 0.2},
+	double matriz_estendida[3][4]={{-1, 0, -1, 0.2},
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}};
 	double x[3]={0.5, 0.5, 0.5};
@@ -40,7 +40,7 @@ int main(){
 		}
 		dr=maior/max;
 
-		if(dr<0.01){
+		if(dr<0.01){//ñao esta dando para passar o erro
 			printf("solucao: %.2lf %.2lf %.2lf\n", x_aux[1], x_aux[2], x_aux[3]);
 			printf("Numero de iteracao: %i", i+1);
 
