@@ -3,7 +3,7 @@
 
 int main(){
 	int i, j;
-	double matriz_estendida[3][4]={{-1, 0, -1, 0.2},
+	double matriz_estendida[3][4]={{-1, 0, -1, 0.2}, //help
 							 {-0.5, 1, -0.25, -1.425},
 							 {1, -0.5, 1, 2}}; //fixing connection problem on git
 	double x[3]={0.5, 0.5, 0.5}; //ajuda aqui
